@@ -1,0 +1,26 @@
+<div class="container mt-5">
+    <h1 class="cart-title">Minha Página de Vendas</h1>
+
+    <div class="action-buttons">
+      <button class="action-button btn btn-primary" (click)="adicionarProduto()">Adicionar</button>
+      
+    </div>
+
+    <!-- Exemplo de item no carrinho -->
+    
+      <ul>
+        <li *ngFor="let produto of produtos">
+          <img [src]="produto.imagem" alt="{{ produto.nome }}">
+          <span>{{ produto.nome }}</span>
+          <span>Preço: ${{ produto.preco }}</span>
+          <button class="btn btn-info" (click)="editarProduto(produto.id)">Editar</button>
+          <button class="btn btn-danger" (click)="excluirProduto(produto.id)">Excluir</button>
+        </li>
+      </ul>
+
+    
+
+    <div class="cart-total">Total: $89.97</div>
+
+    <button class="buy-button" (click)="comprar()">Comprar</button>
+  </div>

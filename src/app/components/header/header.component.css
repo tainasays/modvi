@@ -1,0 +1,84 @@
+* :link{
+    text-decoration: none;
+}
+
+.main-header {    
+    padding: 10px 0px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 40px;
+    
+    
+}
+
+.main-header__title {    
+    font-size: 80px;
+    letter-spacing: -1.5px; 
+    font-family: 'Hammersmith One', sans-serif;   
+}
+
+.main-header__title--purple {
+    color: var(--purple);
+    color: #8e7dbe;
+    font-size:60px;
+}
+
+
+.main-header__title--green {
+    color: var(--green);
+    color: #659157;
+    font-size:60px;
+}
+
+.main-header__menu ul {
+    display: flex;
+    justify-content: flex-end;
+    color: #08605F;
+    font-family: 'Kosugi Maru', sans-serif;
+    
+    
+}
+
+.main-header__menu a {
+    padding: 10px 10px;
+    color: var(--gray);
+    font-weight: 400;
+    font-size: 22px;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+}
+
+.main-header__menu a:hover {
+    background-color: var(--ligh-gray);
+    color: #388659;
+}
+
+.container-menu {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    flex: 1;
+}
+
+.badge-carrinho {
+    background-color: var(--purple);
+    padding: 5px 10px;    
+    border-radius: 4px;
+    color: #08605F;
+}
+
+button{
+    background-color: var(--green);
+    border: none;
+    color: white;
+    padding: 10px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    transition: .3s all;
+    border-radius: 3px;
+    font-family: 'Kosugi Maru', sans-serif;
+    cursor: pointer;
+    padding-left: 50;
+}
